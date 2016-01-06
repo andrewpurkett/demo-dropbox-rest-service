@@ -1,0 +1,56 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "intervention/image": "dev-master",
+        "laravel/framework": "4.1.*",
+        "iron-io/iron_mq": "dev-master",
+        "dropbox/dropbox-sdk": "dev-master",
+        "way/generators": "dev-master",
+        "guzzle/guzzle": "dev-master",
+        "mocavo/pretty-json": "dev-master",
+        "nesbot/Carbon": "*",
+        "symfony/yaml": "dev-master",
+        "contextio/php-contextio": "dev-master",
+        "doctrine/dbal": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "app/commands",
+            "app/controllers",
+            "app/models",
+            "app/database/migrations",
+            "app/database/seeds",
+            "app/tests/TestCase.php"
+        ]
+    },
+    "suggest": {
+        "doctrine/dbal": "Allow renaming columns and dropping db columns."
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "php artisan clear-compiled",
+            "php artisan optimize"
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "github-oauth": {
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mocavo/pretty-json"
+        }
+    ],
+    "minimum-stability": "dev"
+}

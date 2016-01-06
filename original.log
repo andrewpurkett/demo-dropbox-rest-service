@@ -1,0 +1,1543 @@
+commit a6110de80846243be6871c111a93f3a9a37f82dd
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Mar 12 13:43:33 2014 -0600
+
+    Use Queue guid not account ID
+
+commit b5593427a731eabee0f2e87e48c9ba5079aaafac
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Mar 12 12:38:20 2014 -0600
+
+    Only update last_synced_at initially if we actually synced things
+
+commit e25c0e4dad025083d2d62cae0a843dad906805dc
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Mar 12 09:57:00 2014 -0600
+
+    Sleep 120 seconds logs a warning now
+
+commit 4d51bd4f4a0ba16fbcbf9701621ea12c577b7675
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Mar 12 09:41:02 2014 -0600
+
+    Sleep 120 seconds if there is nothing to sync
+
+commit d6af4daaedece51d2a29a94e96bb75da03b336df
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Mar 12 09:27:19 2014 -0600
+
+    files_since should be unix timestamp
+
+commit 18d99c74caea170ab7898ef1dd5112ca41c64f40
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 18:27:25 2014 -0600
+
+    Update last_synced_at after syncing
+
+commit 6cfd5318f83012c566b73ca185bd108a1cb93b2f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 18:07:54 2014 -0600
+
+    Fix for case sensitivity
+
+commit 6db1ff3c750e11c7f60436db12f31686fbfbf1ae
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 18:06:00 2014 -0600
+
+    contextIO case sensitive
+
+commit 0bfe24d2072c297ac3aa881ae52e1a34fcfe55aa
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 17:56:03 2014 -0600
+
+    Include connect details
+
+commit df6c76f0082be7996b23e1ca41bd2a4692ea8ba0
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 17:43:08 2014 -0600
+
+    Fix silent fail
+
+commit e6859ef8234f37ddb4ae9f19d3d9c96522f7b1c2
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 17:37:44 2014 -0600
+
+    Use sync_queue_id from config instead of default config in subscriptioncontroller
+
+commit 6d286ba36403dcdfa3693a2de49ca4610abf6668
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 14:58:20 2014 -0600
+
+    List method for context.io; decrease frequency of list pull from contextio
+
+commit 19de23a45cf7ca422baac00d8887a91d5f60f919
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 14:14:08 2014 -0600
+
+    Minor tweak to migration due to the difficulty in migrating data otherwise
+
+commit ca36f333c9fe055e65f90b2600fc537c45df8b2b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 14:05:50 2014 -0600
+
+    File syncing
+
+commit b026ee8f94b09878544ef7acaf35c600e2c15562
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 13:50:01 2014 -0600
+
+    Old habits die hard, updating formatting for PSR compliance; Update local paths to store in dropbox subdir on content; add contextiofilehandlercontroller
+
+commit db74499b468529702ae425360e3782397cb01e26
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 13:40:14 2014 -0600
+
+    Save attachments while retrieving to reduce memory usage; grab 100 instead of 1000 at a time to allow for more immediate logging
+
+commit 98c2f249881b65ae8ab71d7a39252c7301e3f2b1
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 11 13:24:09 2014 -0600
+
+    Syncing improvements for contextIO; logging for debugging
+
+commit 50d6840924646b29ec0342717c5a197b76a8d111
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Mar 10 14:47:47 2014 -0600
+
+    Comment about original_path being varchar 255 instead of text added
+
+commit 915f6134fd0eaca46a924c7066db69bfd853c9c5
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Mar 10 14:29:19 2014 -0600
+
+    Last sync calculation correction
+
+commit 70fe1d5405dcbc50d3ef73ecf13bf63ec63b9a85
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Mar 10 14:23:14 2014 -0600
+
+    Status info implementation for context.io
+
+commit 2441890b9717aeb36b230a11ace9796f1e8421b9
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Mar 10 14:18:12 2014 -0600
+
+    Context.io list accessor written
+
+commit 59cda6153bb64bc38ecae143d46f257d113aa808
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Mar 10 14:13:27 2014 -0600
+
+    Context.io file localization routine written
+
+commit 0dffbe0b73dc86395048e6d35640dd67650e40bc
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Mar 10 13:59:36 2014 -0600
+
+    Context IO syncing almost ready for testing
+
+commit fdb1aad077dc3aa06b59cdcc0fb05ad442350809
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Mar 10 13:22:31 2014 -0600
+
+    Attachments table added for context.io syncing
+
+commit 8258dc38a920dced7ee14e70f656daf87b7f3848
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Mar 7 12:36:39 2014 -0700
+
+    Context.IO account linking functional; TODO: Syncing
+
+commit b24fc71770460b86bc924ae645a479ce053faaef
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Mar 6 15:47:45 2014 -0700
+
+    Local URL points to proxy to dropbox server if file is not yet downlaoded to demo-app
+
+commit baf59fa9bc6624ffdceb6bc9515fc4adaf30f6c6
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Mar 6 15:44:27 2014 -0700
+
+    Send files that are not yet downloaded to requests for /files
+
+commit a94bbe2de07a51246e18dffba00cea15c89bfe86
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Mar 6 13:43:04 2014 -0700
+
+    Remove test code from routes.php
+
+commit 0323651805576e91363097e3fb371e18455460bd
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Mar 6 13:39:26 2014 -0700
+
+    Context.IO Service progress; now populates and handles queue (though dumbly)
+
+commit b55bfe8c6096bc4ffbb219f7d0f28c7dd3d0f9a0
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Mar 6 13:04:00 2014 -0700
+
+    Testing code added to route controller commented out (Temporary); Post changed to put in route of contract saving for context.io
+
+commit 2b2e7061b5f0e60921480cca011519df9b6dd728
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Mar 5 22:55:31 2014 -0700
+
+    Move context.io methods to cio crawlercontroller for now
+
+commit 16275430db461645ffd7c26a506231c1cb711469
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Mar 5 22:11:35 2014 -0700
+
+    Routes re-arranged so SSL forced for all requests; Implement Context.IO Subscription Controller
+
+commit 89c493b93e901833635ab95998eed0939ee04fab
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 4 12:07:44 2014 -0700
+
+    Move proxyPost method to demo-app
+
+commit 545a46592b1929700be9617fd2ad7834cfa7ee69
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 4 11:50:37 2014 -0700
+
+    Demo code of popup
+
+commit d9f889a4b2209fbfd45c24c82459242391ad2260
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 4 11:23:53 2014 -0700
+
+    Supply email address in GET to avoid ContextIO page
+
+commit 0fa37a04a797f7e6af4c82a775430aa93ec0dcbe
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 4 11:04:09 2014 -0700
+
+    Generate context.io account before sending user to context.io authorization page
+
+commit 4e98ea2728efe0373531fe9ecf9e1ee849057a21
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Mar 4 10:38:58 2014 -0700
+
+    Testing of CustomerIO subscription POST handling
+
+commit d955f9fd3ced82a18d86261515abad5ea2bf2e25
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Mar 3 14:09:20 2014 -0700
+
+    Authorization in context.io mirrors Dropbox integration for initial GET. Post is still a mystery...
+
+commit 805b79c3a57ec1d182aa48fb209df53d39cf47b7
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Mar 3 11:55:59 2014 -0700
+
+    Context.IO Integration similar to dropbox integration
+
+commit b62421e83cf15dc4b953523537a4daf7ccd039b6
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Mar 3 11:48:34 2014 -0700
+
+    Context.IO integration tests
+
+commit 5d642b849a50524d0ca03a3ca0b3ccaa71c38fdc
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Feb 28 14:20:18 2014 -0700
+
+    Composer updates after adding context.io
+
+commit 9729b5dcbb1bdd05f3cf5283ecc853dd80f34bee
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 26 11:42:25 2014 -0700
+
+    Experimental direct link service endpoint commented out but added to codebaes
+
+commit 79b3ec57fcfe037570c80879caaf75497b41d1ec
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Feb 25 15:32:55 2014 -0700
+
+    Enevelope
+
+commit 4544eccaa4478cf6fed08eaa74fbc2482164cb31
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Feb 25 14:57:55 2014 -0700
+
+    Account info reduced to useful data
+
+commit 486f3f0f3329a430be182524201e14acc785136d
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Feb 25 14:35:19 2014 -0700
+
+    Dropbox account detail endpoint
+
+commit ad20172b66f3e9b5704384ac574482828de9f435
+Merge: 383a7b0 aa011eb
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Feb 25 11:57:57 2014 -0700
+
+    Merge branch 'master' of github.com:demo/demoproject
+
+commit 383a7b0240ad41975e2dfeadbfe5b289ea07f424
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Feb 25 11:57:15 2014 -0700
+
+    Fix bug with sync queue handling caused by rename of path to original_path; Reintroduce children method of entry model; Add status to supported routes
+
+commit aa011ebcf4a182fedfa9b0b77512aca6aad72d57
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Feb 25 11:18:00 2014 -0700
+
+    Add suggested sleep value to stop excessive polling of iron.io queues
+
+commit 1cfc66a8e032dc31d70d47352495f42f3995d0b5
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Feb 25 10:26:02 2014 -0700
+
+    Check for file existence on content server before uploading it; Avoid SHA collisions
+
+commit 9355da709dd5c6e30a821ac09e0695ae4f86083b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Feb 24 17:19:12 2014 -0700
+
+    MySQL stores time as UTC
+
+commit 427c650bed323d851f839a4bdf0013f49741d029
+Merge: 230c383 618a792
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Feb 24 17:00:00 2014 -0700
+
+    Merge branch 'master' of github.com:demo/demoproject
+
+commit 230c383dd5b6a19b446dbf394e91bf748aad60e5
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Feb 24 16:59:48 2014 -0700
+
+    Use carbon to convert MySQL dates to RFC 2822 taking time zone into account
+
+commit 271fd214008b0fceb60083eb593bf16d368fd9db
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Feb 24 16:21:19 2014 -0700
+
+    Update README.md
+
+commit 5ac91dcedb8ec22cbef90bc9d9fd3a1a09547c0f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Feb 24 15:53:37 2014 -0700
+
+    Use dropbox project instead of demo
+
+commit 97ff02807dbfcc558c6f6256610a059ba3e361e7
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Feb 24 15:49:24 2014 -0700
+
+    Non-standard migration to resolve issue with foreign keys and changing primary column type from integer to big integer; You must delete all tables in dropbox db and artisan migrate after receiving this commit
+
+commit a34ed9ab3cc75763606a4fceb6105bf305f38387
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Feb 24 15:17:06 2014 -0700
+
+    File processing in dropbox service working
+
+commit 4c9f3c4ec62c9a4ecc8c9e56126fb607c7aad740
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Feb 24 14:56:12 2014 -0700
+
+    Exceptions using full namespace; Refer to contract as a guid instead of user id; various fixes
+
+commit cc843f7f33acc9f5f09129a2c0767a8e43770a7b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Feb 24 14:20:30 2014 -0700
+
+    Dropbox linking using new API method
+
+commit 71eb02a51a470a7844c73886d2d1376468e0a1a1
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Feb 20 16:08:16 2014 -0700
+
+    Half finished dropbox localization routine
+
+commit 4c7aa1771d944fb04281e3e687af935e5420e556
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Feb 20 15:38:44 2014 -0700
+
+    Incremental jargon update
+
+commit 5f6565b48395b5bb2815ce42bcecc68c8a7e7413
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Feb 20 15:24:59 2014 -0700
+
+    Jargon change; minor updates to arguments in subscriptions
+
+commit 14d337abac25181e358dd7c77e858c17283b2c8f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 12 11:28:57 2014 -0700
+
+    Proper paths for dropbox bootstrap file based on env
+
+commit 90e7069c22254463064de14a50108e41b2e075d2
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 12 11:18:32 2014 -0700
+
+    Dump autoload
+
+commit 5fab1d34b1bc251fce27929cd597e3aef465a434
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 12 11:08:15 2014 -0700
+
+    Storage not in repo
+
+commit 2181286dc661554645cb625d1e8e851bf51b37a0
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 12 10:54:04 2014 -0700
+
+    Rapid prototype
+
+commit 3c8798b90b9358f4dbf7c30d0084686ae1df1c98
+Merge: c24acd5 523aef5
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 12 10:38:48 2014 -0700
+
+    Merge branch 'master' of github.com:demo/demoproject
+
+commit c24acd58ade482289c6bc1939a803fbde439f5d0
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 12 10:38:41 2014 -0700
+
+    Seeder fix
+
+commit 523aef5a3173b68d0f3d7283e43266d565338948
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Feb 11 11:44:02 2014 -0700
+
+    Prepare for github oauth token assignment for composer
+
+commit 69bbdfbcc4c0a7e15a215a6daa88239120373d8e
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Feb 11 10:43:42 2014 -0700
+
+    Queue config improvements
+
+commit d380e998afc43ae2e5a131b3c9d6a62aa137a7ae
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Feb 10 12:16:31 2014 -0700
+
+    Staging folder for dropbox config
+
+commit ba77604c8331c7230754a43ce45b2a868f350d2b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Feb 7 13:42:35 2014 -0700
+
+    Don't require SSL for dropbox right now
+
+commit f24158ffead4f710bbe06c3aedec888ea7042e22
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Feb 7 13:05:00 2014 -0700
+
+    Add sha1 computation, update sync function to use queue, allow for queue postfix values
+
+commit d32c193df17693916af2ec9ca6c999ed574860a8
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 5 23:07:05 2014 -0700
+
+    Dont write temp files when downloading
+
+commit 5dfec79c4ead8bc4e8006b00fdf4f29d329866c3
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 5 21:34:24 2014 -0700
+
+    Fix context data queued
+
+commit 720b4565101c0f6901c4d6180b37084a70b69680
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 5 21:19:53 2014 -0700
+
+    Separate directory path and filename; add modified and client mtime to queued data
+
+commit 9661584d594259d578d102c36cec9b276299a60b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 5 16:02:21 2014 -0700
+
+    Queue handling of delta processing
+
+commit 833df2064e55a0bf457497d158f4c7f0397ef625
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 5 15:26:16 2014 -0700
+
+    PrettyJSON is pretty
+
+commit 89627be269e41d9d22e82a2232a47cc207326c8d
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 5 12:17:22 2014 -0700
+
+    PrettyJson added
+
+commit ffa1c3b4cd524988033fa8a971d2a78a617ce7f0
+Merge: a3b013f 0639283
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 5 11:47:47 2014 -0700
+
+    Merge branch 'master' of github.com:demo/demoproject
+
+commit a3b013f5dae899552f0b6476e294094b40ac6b18
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Feb 5 11:46:21 2014 -0700
+
+    Updates
+
+commit b8b6032690493e611966a538b702da9aa3a46fc1
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Feb 3 16:56:16 2014 -0700
+
+    Update composer; fix guzzle missing
+
+commit 37b7333ee592f51212fb3cfbf5de65c277faffeb
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Jan 30 14:31:29 2014 -0700
+
+    Local folder for config added
+
+commit 6b239f20cb5d438e5a97946024839a4468f6a59c
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Jan 30 14:27:17 2014 -0700
+
+    Seeder now also seeds the dropbox sync queue; Use config table name
+
+commit 2ec72731d49e18e3f0b5d9f0786fe3fcc0b38565
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Jan 30 14:00:34 2014 -0700
+
+    DatabaseSeeder added
+
+commit 265d8b54f18a8340f57cff1b6615cc73f9a0eabc
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Jan 30 12:59:28 2014 -0700
+
+    Files RESTful endpoint now accepts second URL segment for folder
+
+commit 3d414f6a99d52eac6eceba4df9f8c48e3de2d3f8
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Jan 30 12:42:50 2014 -0700
+
+    Fully implemented the queue (Which should be run with php artisan
+    queue:listen --timeout=86400 since syncs can take a long time, depending
+    on the size of the delta)
+    
+    Downloads are now served by the entry ID for the entries table
+    (https://dropbox.local:1702/download/2 downloads Getting Started.pdf as an
+    attachment). If a folder is requested for download it returns a 400 Bad
+    Request
+    
+    Retrieving the file list now retrieves a limited subset of the database
+    columns, pruned of columns never needed by an external request
+    (parent_id, which can be resolved by a call to Entry::children)
+    
+    The crawl method has been removed, in favor of using syncs from the very
+    first subscription (Removes need to trigger sync separately from initial
+    subscribe post)
+    
+    Reduced complexity of crawler controller
+    
+    Handling for non-existent demo user ID in the authenticate method
+    
+    Renamed the Dropbox dropbox iron.io queue to dropbox.sync (Since there
+    is some likelihood there will be multiple queues in use)
+
+commit 2d79f3c0b5556210b807d1a36509b940ae95f108
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 16:07:16 2014 -0700
+
+    Update README.md
+
+commit 7d0a9f1864d5cbe9b463c2e0111fd1063bcc8210
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 16:05:45 2014 -0700
+
+    Create README.md
+
+commit 064fbc3d27a772ed9d6e8abfe0a53c1c74f7a3ce
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 15:51:46 2014 -0700
+
+    Correct handling of deleted files (Read wrong part of documentation previously). Recursively delete child files and folders when deleting their parent or grandparent etc; Add child method to entry model which retrieves by a like statement. TODO: Use the parent_id chain to recurse instead of the LIKE statement
+
+commit bb7263f0c80b8de2de869cae8a5a67c602825040
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 15:02:06 2014 -0700
+
+    Remove unused views
+
+commit 615e3356278dc6e9ef181c6643ce93ba47fee587
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 14:59:27 2014 -0700
+
+    Allow creation of dropbox tree without use of crawl. NOTE: Does not include folder hashes, and root is manually generated
+
+commit 3ae9aa49a14b1fd834b17b79fa9d2b497779fe02
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 14:35:19 2014 -0700
+
+    Rename dropbox_id column to reduce confusion because of eloquent model use of tablename_id as key; Sync tested and working from seed data
+
+commit baf6b1d0f1b946618772e85bd428a1338118b303
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 13:54:17 2014 -0700
+
+    Syncing of deltas now implemented but not yet tested
+
+commit 2781bcc62fd3062ef16beafb4ff39e55487603a6
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 13:15:34 2014 -0700
+
+    Catch folder hash parameter; catch deleted files
+
+commit 7df75ce1968d4603445218edc6f36beed5e5cab6
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 13:11:26 2014 -0700
+
+    Change bytes to an unsigned bigint
+
+commit f87aecdc23cfa5eb19016f54493ece8c900585ed
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 13:03:25 2014 -0700
+
+    Extensive delta testing in progress; committing before updating entries schema to use bigint for bytes column
+
+commit 6d5e362f942a967b3cfb76441aa20a486ace1cf1
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 12:22:01 2014 -0700
+
+    Fix table reference name before rename
+
+commit cd4bc8a4f8c1a625c9281a2133f39db8961bf259
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 11:42:03 2014 -0700
+
+    Fix for route variable naming to reduce confusion; update for crawl recursive call name
+
+commit c085aa0883bf71b2632bd06e119a11b5fc488367
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 11:19:05 2014 -0700
+
+    Rename trees table to dropboxes; update schema on entries and dropboxes tables; Update various files as required for changes
+
+commit 77b7d149f26aa3f55fe4635b6ce744f433d9e178
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 28 10:58:56 2014 -0700
+
+    Vendor updates
+
+commit 2534bfe9fde1040d38ce3a668e9485a765f27a31
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 27 15:39:06 2014 -0700
+
+    Remove testing methods in DropboxCrawlerController; Simplify path mapping; rename confusing methods; reorganize DropboxCrawlerController so public methods are at top of file
+
+commit 0594e7114cec843fb4d2dccfa1a21aef362b5727
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 27 15:33:28 2014 -0700
+
+    Fix route for link delete
+
+commit aba975bcb5d2e4ecebd11cdf81927bf9baec6fd3
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 27 15:29:45 2014 -0700
+
+    Shorter routes; Correct camel case method approach for home controller; Implement link delete route for demo-app demo; Use user ID passed in to get dropbox data for all methods instead of relying on controller set data; Remove testing file browser controller; Consolidate all dropbox methods to SubscriptionController and DropboxCrawlerController
+
+commit f7a23539c7b731b2ad75873098bbcddda8bae8c8
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 27 15:12:17 2014 -0700
+
+    Migrate delta cursor in to trees table; Add delta handling (Unfinished); Add delta sync route
+
+commit f9c4842a535c3c25993c12e22f0d6eff5401f1fe
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 27 14:21:05 2014 -0700
+
+    Fix syntax error
+
+commit 401241bfb4d062323870477c779ac11edfc9be73
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 27 14:17:31 2014 -0700
+
+    Add subscription deletion route and allow json file listing request at files route with passed in user ID
+
+commit 8c261848ce50a0027b9e21eb776daeb18a2d7988
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 27 14:16:55 2014 -0700
+
+    Pass subscription status from dropbox to front end
+
+commit a6874749a2652c12adee27aeeedb6c50ab1df1b3
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 27 14:15:53 2014 -0700
+
+    Tree controller can now return JSON of a tree
+
+commit 0eb6587c2e830c587283ec7214c88fb496dc8297
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 27 12:06:34 2014 -0700
+
+    RESTful responses for various routes
+
+commit 28cd4e7149d20441b51f25b3747309e11c9cb5a6
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 27 11:39:01 2014 -0700
+
+    Simpler routes for linking demo
+
+commit 31bb5b0fac35dca8825e43f8df7a6a351db488ab
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 27 11:24:33 2014 -0700
+
+    Reorganize routes to be clear about component permanence and reason for utilization
+
+commit 103bb005a2d1e3075f9c17810014b37c25bc575a
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 16:57:22 2014 -0700
+
+    dropboxcrawler/tree populates the entries table... except that it times out because our time limit is too low
+
+commit d0e3f7e37f4837fee4b87d40363f5eb77c221a21
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 16:21:33 2014 -0700
+
+    Remove DbxCSRFSessionStore from DropboxCrawlerController since it is not used in there
+
+commit ad855c4533d5bb410abc4f8920eaee1dbecd5a2f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 15:54:03 2014 -0700
+
+    Include guzzle for restful endpoint interaction; Include detailed commenting; Improved user distinguished tree handling; get and put verbs used for subscriptions
+
+commit 69b132449011cdd35b851df445dd355493beb59c
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 14:36:17 2014 -0700
+
+    Fix case for files controller filename
+
+commit bad4ae0bebd8c490c9bf6b9e19cf1a8e910fc145
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 14:35:06 2014 -0700
+
+    Dropbox Demo broken in to useful parts; removed unneeded components; Crawler implementation is incomplete
+
+commit a52fc1b5bc425db808589b0ed46f40a406f08cdf
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 14:07:24 2014 -0700
+
+    Using eloquent model for dropbox access tokens, need to switch to restful endpoints as soon as the system is ready for integration
+
+commit 7dc782e409a32a6db6731bba5289b2c871623f46
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 13:33:38 2014 -0700
+
+    Remove testing routes for working around get parameter issue; Remove grant since it is not needed
+
+commit 307b47b4fdb0b54f541aab72f9b1cda6006c2324
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 13:13:16 2014 -0700
+
+    Subscription endpoints interact with tree and queue crawling
+
+commit 582c05c86c1c293531aa3643a4e725e412ee4ba7
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 10:55:32 2014 -0700
+
+    Tree and Entry models linked using foreign key; Tree table seeded; Fix seeder
+
+commit 01ddc8126083d8e1d170a2bb12b8aa5363c190c7
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 10:07:32 2014 -0700
+
+    Trees table
+
+commit 7d271182d91ca36c799f1ead1c666934cf24d801
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 10:03:39 2014 -0700
+
+    Remove TreeEntries which was a mistake
+
+commit 05aaa65a8a23aadc2f9bfb1a2d8c19980ab68404
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 22 00:09:56 2014 -0700
+
+    Entries instead of TreeEntries;Migration works correctly;Seed can be run with artisan db colon seed; Fix views
+
+commit 31d990a4598b59678b75df66eb67d64879b79805
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 22:40:47 2014 -0700
+
+    Add heading to tree-entry index page
+
+commit 9fe828226c4086602988a9bf26dbed7e47329f13
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 22:25:26 2014 -0700
+
+    TreeEntries table
+
+commit 9085ec14ee17d2ab16ddd7d911c8e8e776ec98c2
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 20:54:58 2014 -0700
+
+    Add generators; update dropbox db to correct db name; Final cached interpreted response of dropbox tree; Load dropbox tree from cache
+
+commit 1f4f276f462ed6acfbd7f4e32614f009153f3963
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 20:23:51 2014 -0700
+
+    Move addFolder above walkTree recursive call so uncrawled is emptied
+
+commit 07747a1602e68253ba28aaaf53aee2bb38f4570b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 20:04:05 2014 -0700
+
+    Pass dropboxTree from walkTree
+
+commit 903559c14a2165fe536a1bf79d1e4860d445457c
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 19:47:25 2014 -0700
+
+    Fix for Argument 1 passed to DropboxDemoController::cacheSandboxListings() must be an instance of DropboxTree, none given
+
+commit d1490aa5ec7bcf4cb05442d0745177a5f37da49b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 19:41:54 2014 -0700
+
+    Enable sandbox writing
+
+commit 4cf140b08bf786a0f3fccc402835f0b15ecd8770
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 19:37:31 2014 -0700
+
+    Improved sandbox implementation
+
+commit c513b553ecfeb3c95353b9a3a07f5724a0580cf0
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 19:35:40 2014 -0700
+
+    Improved serialized array
+
+commit 405a8c5e3f35558c3ca2bc6af9446844189bd773
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 19:26:06 2014 -0700
+
+    Remove recursion limit
+
+commit 898982cf0e080b68148098bdd28d5d40b2f66e8a
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 19:22:52 2014 -0700
+
+    Test new serialized array approach
+
+commit 88fca20d3a4ff6e7b2d3dff4597665af31843c89
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 19:19:28 2014 -0700
+
+    Improved serialized array
+
+commit 0c4de203b3e270ee8108ad01edd3c4b630e97365
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 19:16:39 2014 -0700
+
+    Fix syntax error
+
+commit a2f2ce12782960d15280d62d40181847902b5f2c
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 19:15:12 2014 -0700
+
+    Serialize files and folders in flat arrays
+
+commit c8f43c2b60a0802dfe2d66a38d91b5670d191640
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 16:24:12 2014 -0700
+
+    Get rid of stuff we dont need to save
+
+commit fa7974203cd842f74547c117356c84a947389b13
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 16:21:17 2014 -0700
+
+    Debugging DBT
+
+commit d96fb1a5064a50c027a088d4047e5c57352323c6
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 15:42:37 2014 -0700
+
+    New serialized dropbox tree
+
+commit 5e1976d354baa5c597526e299510293fec984717
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 15:23:25 2014 -0700
+
+    fix quote in wrong place
+
+commit 5e7b16c5bd86c51dc81dc0d08f8678782860550f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 15:18:18 2014 -0700
+
+    Serialize without foreach pointer references
+
+commit 35e4d4e194aca292d191cceb123d18f122533d50
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 15:06:27 2014 -0700
+
+    show exceptions in log so we can tell what's going on
+
+commit 6dfb762c2db2a15d5aa92ed15d7b1c5651c5891c
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 15:06:19 2014 -0700
+
+    fix path for storage
+
+commit 4379b3a9619c9f126db7ca3fd3091faf3815c2f7
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 15:01:26 2014 -0700
+
+    install vendor into repo
+
+commit 8057b11c77ad4d743b9ce05bde6574613baadb87
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:39:02 2014 -0700
+
+    Lets unserialize again
+
+commit fc69c24196fd8d57ca83c14087de982e3e3b7be9
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:38:00 2014 -0700
+
+    Patch serialized
+
+commit 25327937bf6a081954553ba6616f4f169f367a8b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:26:56 2014 -0700
+
+    Split up file_get_contents and unserialize commands
+
+commit e189082d8911f8723481a32d036e734dcf2049c1
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:23:11 2014 -0700
+
+    Move to serialized file
+
+commit e3f6f434d5e874619ca6ce9864c1d13a3a4eec41
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:21:55 2014 -0700
+
+    Use serialized data instead of json
+
+commit f44f9de957aab1b964615761eee02b8902b4c4ae
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:15:36 2014 -0700
+
+    JSON failing so hard, switching to serialize
+
+commit 06718c6f496196eca46240dcd22a0d07aeb8c748
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:08:05 2014 -0700
+
+    Fix for JSON cast as stdObject
+
+commit a88bd8c19035409d7878ed5337aceebabb5e5254
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:07:02 2014 -0700
+
+    Miscast from JSON
+
+commit 2a4e8e5b2050b44763236efad846d7355e14b2f4
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:06:19 2014 -0700
+
+    Remove pointer usage
+
+commit 5c786aca770019d19f5e81093f4d4f808d4d750e
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:05:46 2014 -0700
+
+    Remove pointer usage
+
+commit 164dcc7ebd37f968a90d61de0739eb5fbeebe88b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:04:22 2014 -0700
+
+    Remove pointer usage
+
+commit 5f74d1cd2946ef3c0a7bdce1bfed9ce9cce6239f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 14:02:26 2014 -0700
+
+    Remove pointer usage
+
+commit a60b84b30d52e32ffcd78a8afd5f0a09c6c3a551
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:58:26 2014 -0700
+
+    Testing propagation
+
+commit e559dc1953dc21ed9ef6d2219df381100f9a3d77
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:46:50 2014 -0700
+
+    Testing propagation
+
+commit fc1722ef2a7e5ce3a45df8d235c98d38f6c426fe
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:45:15 2014 -0700
+
+    Phony data returned from dropbox
+
+commit a538a87fff2fb3f8eb7231161dfd6a2ff0176f99
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:40:53 2014 -0700
+
+    Variable name update to reduce confusion
+
+commit ed6271918c293b6689a656c6747d6bb8d27155d7
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:36:30 2014 -0700
+
+    Test rate limiting
+
+commit a4941647df685bbcb79e4635283d48c6ee0ab4e5
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:35:47 2014 -0700
+
+    Test rate limiting
+
+commit efdc78afc5603bfd93ecb79edc868443927d34d1
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:34:08 2014 -0700
+
+    Test rate limiting
+
+commit b8b78ed4bafd7a0f7c0a41057499fde9cb107386
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:32:28 2014 -0700
+
+    Test rate limiting
+
+commit ea8431a13a3ce4a48eaf5433c96f8ce4a8665075
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:30:45 2014 -0700
+
+    Test rate limiting
+
+commit 90b6d2acb8825b1a60b498838e37bdb08a5c1b51
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:29:50 2014 -0700
+
+    Test rate limiting
+
+commit fc36dce089940d2281ba469884eaf7fb55894d96
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:28:22 2014 -0700
+
+    Test rate limiting
+
+commit b554319c2dd17fd48b45adc41db977920944bc99
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:25:46 2014 -0700
+
+    Don't bank sleep past the rate limit cycle time
+
+commit b95d7e58de5a74f179d3bdc8d450d177a735de85
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:22:05 2014 -0700
+
+    last_sleep_deprivation stored at controller level
+
+commit d82b5b480cd32ba2d95f569622f667182ac594ad
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:21:01 2014 -0700
+
+    Don't oversleep if we are exceeding the limit
+
+commit 37df8c2e1d081e593f56c94d045123a891481452
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:17:49 2014 -0700
+
+    Improved logging
+
+commit 38d4a0c0f1663af4127cb5ec523a8afeb7c67a48
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:16:49 2014 -0700
+
+    Improved logging
+
+commit dcdbf1be29fb732ed65ade50ba885bbc902d856a
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:09:49 2014 -0700
+
+    Try a fifth of a second for request period
+
+commit b88e9050c37c33854932229f18e99df8b2b56f27
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:06:21 2014 -0700
+
+    Fix value in sleep
+
+commit 37031a4cac6fa49c1dff6b8e33914c7b109d477b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:02:11 2014 -0700
+
+    Improved logging and sleep handling
+
+commit 7130087e2a05751a0da6c9d8995b0067ad77e84b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 13:00:07 2014 -0700
+
+    Rate limiting handled intelligently
+
+commit 10b62d66ac155ad088b7be000649e1d570486f0c
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 12:53:17 2014 -0700
+
+    DD doesnt spit out full string; try to catch rate limiting exceptions
+
+commit d995a955e8023de1d97c184bd14014ea3e387df5
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 12:47:34 2014 -0700
+
+    Die and dump JSON encoded directory tree after walking it fully, so I don't have to keep polling the API before I get the database setup
+
+commit 27b91d29fa8fd1ef84f45b24374c9979f6cbc254
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 12:41:05 2014 -0700
+
+    Lets try 10ms between request
+
+commit 3ba07abb0e0c01fd3ae7063cc48e0e54f33a58ef
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 12:36:49 2014 -0700
+
+    Reasonable rate limit hopefully... 25ms between requests lets go
+
+commit 5fa727f5604b9e7b9b7b22d490683e7aafff42f2
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 12:32:43 2014 -0700
+
+    Usleep 250 instead of sleep 1
+
+commit c110ff8c43528dc495b913dd480a043448d5b7e3
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 12:07:07 2014 -0700
+
+    Debugging recursive walk
+
+commit 7625bebf385060eda58555aa527f4bba032955bf
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 12:05:06 2014 -0700
+
+    Walk tree using recursive function call
+
+commit 9e52dcb92ec8064d44866f95b4ad6cd866806bac
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Tue Jan 21 11:41:09 2014 -0700
+
+    Begin root traversal code
+
+commit d3161c06561f6ddf2f982796b979d731f1af4f00
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 20 13:41:48 2014 -0700
+
+    Mockery listener to autoclose testing
+
+commit 1d0ab37c0b0c076e4b80e1cb47d7e879cd5c7cf5
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 20 12:04:46 2014 -0700
+
+    Input get not input post for post data apparently
+
+commit ae49cc11479f41e22bdd41f38163f2cbc5b4654a
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 20 12:03:33 2014 -0700
+
+    Debug upload
+
+commit abb3efb4044e38c045f7b20afac04318a68a2424
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 20 11:59:12 2014 -0700
+
+    Change upload route to handle post only
+
+commit 7291c70f45dbf076f665c893a917ed9bd485104c
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 20 11:58:16 2014 -0700
+
+    Change upload route to handle get and post and anything else
+
+commit 8b23874f9e31aa032a930307634de8aa0ca90e07
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Mon Jan 20 11:32:00 2014 -0700
+
+    Try showing metadata
+
+commit 7180fcad8eb2f5800c15a05eca9eddf638a66284
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 16:09:28 2014 -0700
+
+    Separate files from directories in list
+
+commit abe82fe807dca616095233c5c62b16118f22d3e0
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:59:08 2014 -0700
+
+    Get rid of array wrap
+
+commit 24a8d4bcc2496238c433bad46256b726625c65a9
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:58:38 2014 -0700
+
+    Get rid of array wrap
+
+commit 96593c9571ae64560612987bedc0577336f66537
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:49:08 2014 -0700
+
+    Remove unused route
+
+commit f92fec55edcd5b165a8c6214b520f88e47a6257d
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:47:41 2014 -0700
+
+    Upload is a POST route not a GET route
+
+commit bec771bf3a0be8c374037692e9e52275bd032036
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:44:02 2014 -0700
+
+    Use redirect::back where applicable
+
+commit aa5e2d241375eceec6b25ae9f99770360690dcb1
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:40:15 2014 -0700
+
+    Simple styles...
+
+commit dbdf39bd517a68aa959376503ca7522fd326277f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:37:03 2014 -0700
+
+    Simple styles...
+
+commit e00844d39e6dbc0c4a05f510d90ce3ae933073b1
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:36:27 2014 -0700
+
+    Simple styles...
+
+commit a4e6d6fa96316793b8e649d25ec0ae272b39c42f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:36:03 2014 -0700
+
+    Simple styles...
+
+commit cb75e7da5750ec7fd844dd5ad26139aec7b96a70
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:33:04 2014 -0700
+
+    Simple styles...
+
+commit b3728ffbc1e2e2fa1109c591d931a456d7dd111d
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:31:02 2014 -0700
+
+    Simple styles...
+
+commit 4d6d2d367d95e0c84be9721aa26e498c01062166
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:30:29 2014 -0700
+
+    Simple styles...
+
+commit c3b5126fb24009f0463264791cfef8c8d5b33c2a
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:29:16 2014 -0700
+
+    Simple styles...
+
+commit c970df35cc544a356a25be2a629a23db291a81b5
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:27:10 2014 -0700
+
+    Simple style
+
+commit b211b6b8a25625ecef2cffdcf9eea0bdd61e8c26
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:26:56 2014 -0700
+
+    Simple style
+
+commit 6b15eff800934c835e9767d657bdcc54937a56f4
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:25:08 2014 -0700
+
+    Simple style
+
+commit 592e268bd98916541d37cebec3335560d6ea4b22
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:23:35 2014 -0700
+
+    Simple style
+
+commit 154a3f85d12905db68c3dd5c9cdba7aff25e91ec
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:22:14 2014 -0700
+
+    Padding for flash message box
+
+commit 378ee9e1d8d552d0d8f61e5cc99b307efafe5e3f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:21:37 2014 -0700
+
+    Padding for flash message box
+
+commit 966eab2515282bc8fd3b39a3310d3acdd8c40924
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:21:11 2014 -0700
+
+    Adapt message render text to flashdata single variable; Remove dropbox.message view
+
+commit 05ae293d8567336e3e8c018deae3a0dbadcbac3f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 15:16:38 2014 -0700
+
+    Use flash message for message display
+
+commit 4fe74a6fed96b52aba826925b9cc558643a184ba
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:51:34 2014 -0700
+
+    Layout
+
+commit 7b264e5bbd4b448f64cee4ed73470060c2cc6632
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:49:52 2014 -0700
+
+    Not showing start
+
+commit 6346169edd72b2607a6fe173108a54042462135d
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:48:55 2014 -0700
+
+    Don't automatically go to dropbox at first visit
+
+commit 6b43fbb24c0c31b214a55fca1ae1bb2d13b81868
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:36:13 2014 -0700
+
+    Move active_client to with clause for layout
+
+commit c38549c9922c4c42a709862ca16c13a5c7c35f5d
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:31:58 2014 -0700
+
+    Syntax fix
+
+commit 40ee4257e8c33b477dfabb6f88d9ac08943cb0a4
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:31:31 2014 -0700
+
+    Nav based on login state
+
+commit d93c9518df3c769b6d068c8eb95902b0f955d467
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:25:59 2014 -0700
+
+    Mostly compliant with standards
+
+commit 0e53bd1ab747bbe433d8df0aa67c5c1506c1e0e0
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:19:30 2014 -0700
+
+    PSR2 conformity improvement
+
+commit d28d7a26356e36c68f8f676082e6581cd9a874dc
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:17:16 2014 -0700
+
+    Render folder now using view make
+
+commit a3c034f590c14cf4606ba182a6271e6edaa25405
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:07:00 2014 -0700
+
+    No semicolon in layout yield
+
+commit 41e5f1d9c1f763a7ea2559a662c194ffb3de015f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:06:24 2014 -0700
+
+    File view extending dropbox layout
+
+commit fc007218afbb980af99593117021bf649e5130f5
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:05:12 2014 -0700
+
+    Move dropbox views in to better places
+
+commit a4fdaabb184dfbb1cec2f2841935999776afc84f
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:03:17 2014 -0700
+
+    Pass variables to blade
+
+commit 5d13f280e20c3589baa036a4b456a73c53d04b92
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 14:01:35 2014 -0700
+
+    Try renderFile with blade templating
+
+commit 94caefa2bb811ea5083ab85e77156288890cec52
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:50:06 2014 -0700
+
+    Postauth without path
+
+commit 03042d29a8acff05e4a76abca70bc1ea57091332
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:49:38 2014 -0700
+
+    Full URL of postauth
+
+commit 24133fe743eed01b191382db6fc01d5150ef16bc
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:47:48 2014 -0700
+
+    getWebAuth moved to object
+
+commit 46da4923ed6206d0403382b6b8db539084b29dd6
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:46:06 2014 -0700
+
+    Encapsulate accessToken usage
+
+commit a64781010d97ddd92895f7bd34a9bcfc6f1763bc
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:44:19 2014 -0700
+
+    Improved implementation of dropbox controller from example code
+
+commit b7f701842e2d1daaaf293037ab30794d69a3d7c9
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:26:10 2014 -0700
+
+    Fix indentation
+
+commit cb2da3827381383f136577f65107e790000aba39
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:24:48 2014 -0700
+
+    browse separated from index
+
+commit 327afc65e9f7589828dac8a62ad47b81e87a12da
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:22:55 2014 -0700
+
+    Fix for basecontroller does not have __construct
+
+commit 83ea8eb88b6b7457e76bf1fbdb6049a878c45533
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:21:47 2014 -0700
+
+    Reorganize DropboxDemoController
+
+commit 54e77f3633b42a7861e3374cd1b114c8c833eaff
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:11:13 2014 -0700
+
+    Remove unused function
+
+commit 394a7ee209800d9f0c2147876b0e6db61031f8f0
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:07:15 2014 -0700
+
+    Better method addresses and names
+
+commit 3d61e9bc9244aa1268af133819fcdf25182af752
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:06:39 2014 -0700
+
+    Better method addresses and names
+
+commit 01847d5aeda9001aa9153c5ebfbf9c57c05ff1eb
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 13:00:51 2014 -0700
+
+    Commit the readme
+
+commit 2b9270826b1ff6894a5aa596e5002f6c5d2e3dcd
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 12:23:44 2014 -0700
+
+    Store dropbox configuration in app config dropbox file instead of inline in the controller
+
+commit 89680e79c8324c0f1a067693270491ce1495dabd
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 12:16:45 2014 -0700
+
+    Rename session keys to be more unique; Inline ValueStore implementation since it doesnt need to live in the dropbox code; fixes for some more awful code
+
+commit a6ccb91b9e2465210be42f754e86b3ce263f3c94
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 11:35:40 2014 -0700
+
+    Force SSL for dbox access
+
+commit 8b41726f271cdc87bcb9c5d14c3437ff5cbd2458
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 11:29:36 2014 -0700
+
+    Use laravel session for access-token instead of php _SESSION
+
+commit 3c4cd369231acddc9f719b24f39d27068d6f7146
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 11:26:00 2014 -0700
+
+    Using replacement for arrayentrystore that is loosely implemented
+
+commit c50e2925b5a143339bd4ec127a2469b45f578b6d
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Fri Jan 17 10:57:19 2014 -0700
+
+    Remove all error handling from authorization finish to kill endless connect cycle
+
+commit 1d764071c3f7ad736c6955d4ec7757ae5382185c
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Jan 16 17:02:02 2014 -0700
+
+    Add dropbox... sort of kind of... and fix host for dev
+
+commit 862650aac77b6ece953acead53a8e56f2228681b
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Jan 16 14:48:18 2014 -0700
+
+    Write log to storage path; handle exceptions within queue with special log handler; Correct url for artisan
+
+commit 7ce3bab10605074cfb677f18e901e350c9534ba3
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Jan 16 12:29:25 2014 -0700
+
+    Working and usable
+
+commit 2c00f92e4bdd21b5eec985f91627ed492a477afb
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Thu Jan 16 12:14:01 2014 -0700
+
+    Move queue receiver to routes so its triggered
+
+commit 2f796e8733dac959bbf916168a6421ca0c630c54
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 15 17:00:52 2014 -0700
+
+    IronMQ and Intervention demos
+
+commit a0d1dde518c20d009c9891e5fed506c44f325bdb
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 15 16:36:08 2014 -0700
+
+    IronMQ test
+
+commit 9791b97a30cf42cfbb77daa6c6b4853c7249c462
+Author: Andrew <andrewpurkett@users.noreply.github.com>
+Date:   Wed Jan 15 16:12:39 2014 -0700
+
+    fresh laravel install
